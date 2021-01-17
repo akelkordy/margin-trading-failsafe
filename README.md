@@ -19,7 +19,7 @@
   Sets the margin percentage (using a numerator / 100) and 
   margin limit (automatic, based on initial balance and margin) for a trading account.
 
-## `incoming-transaction (amount int) receiver principal`
+## `incoming-transaction (amount int)`
   Parses information about a transaction involving spending from the account, and
   - authorizes it if the transaction will not set the trading account's balance below the margin limit
   - rejects it if the transaction will reduce the balance below the limit (err-balance-too-low)
